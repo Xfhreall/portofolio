@@ -11,10 +11,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex justify-center text-white font-poppins">
-      <section className=" h-screen w-4/6 justify-center flex items-center border-x-2 border-white border-opacity-20 flex-col">
-        <div className="border-2 w-11/12 h-5/6 rounded-3xl flex flex-row items-start py-12 px-6 border-white border-opacity-20 gap-8  ">
-          <div className="flex justify-center flex-col w-1/2 items-center gap-6">
-            <div className="flex w-10/12">
+      <section className="min-h-screen h-max w-5/6 lg:w-4/6 justify-center flex items-center border-x-2 border-white border-opacity-20 flex-col">
+        <div className="border-2 w-11/12 h-5/6 rounded-3xl flex flex-col lg:flex-row items-start py-14 lg:py-20 px-6 border-white border-opacity-20 gap-8">
+          <div className="flex justify-center flex-col w-1/2 items-center gap-3 lg:gap-6 mx-auto">
+            <div className="flex w-full sm:w-10/12">
               <Image
                 src="https://i.pinimg.com/originals/82/0a/31/820a31ebc7a75832858aed4f0db952fb.jpg"
                 className="rounded-circle h-auto border-2 p-1 border-white/20 hover:brightness-75 transition-all "
@@ -23,25 +23,26 @@ export default function Home() {
                 height={400}
               />
             </div>
-            <div className="grid justify-center">
-              <h1 className="text-2xl font-bold tracking-wider ">
-                Risqi
-                <br />
+            <div className="grid justify-center text-center lg:text-start w-max">
+              <h1 className=" text-base lg:text-2xl font-bold tracking-wider ">
+                Risqi <br className="hidden lg:flex" />
                 Achmad Fahreal
               </h1>
-              <p className="text-base tracking-widest opacity-50 font-mono">
+              <p className="text-xs lg:text-base tracking-widest opacity-50 font-mono">
                 Farel · he/him
               </p>
             </div>
           </div>
-          <div className="w-2/3 h-auto grid gap-6">
+          <div className="w-auto lg:w-5/6 h-auto grid gap-3 lg:gap-6">
             <div>
-              <h1 className="text-3xl font-bold tracking-wider border-b-2 w-max pb-2 font-mono">
+              <h1 className=" text-xl lg:text-3xl font-bold tracking-wider border-b-2 w-max pb-2 font-mono">
                 Front End
                 <br />
-                <span className="text-4xl tracking-widest">Developer</span>
+                <span className="text-2xl lg:text-4xl tracking-widest">
+                  Developer
+                </span>
               </h1>
-              <p className="text-sm text-justify mt-2 leading-6">
+              <p className="text-xs sm:text-sm lg:text-sm text-justify mt-2 leading-5 sm:leading-6 lg:leading-6">
                 A software engineer based in Malang, Indonesia. I specialize in{" "}
                 <strong>front end development</strong>. I use technologies such
                 as react, vite, next, tailwind, and other technologies and tools
@@ -52,36 +53,36 @@ export default function Home() {
                 </strong>
               </p>
             </div>
-            <div className="flex flex-row gap-4 items-center">
+            <div className="flex flex-row gap-2 sm:gap-4 lg:gap-4 items-center">
               <Link
                 href="https://github.com/Xfhreall"
                 target="_blank"
-                className="hover:scale-125 transition-all duration-300"
+                className="lg:hover:scale-125 transition-all duration-300 lg:scale-100 scale-75 sm:scale-90 hover:scale-90"
               >
                 <Image src={Github} alt="..." />
               </Link>
               <Link
                 href="https://www.instagram.com/arfah.real_"
                 target="_blank"
-                className="hover:scale-125 transition-all duration-300"
+                className="lg:hover:scale-125 transition-all duration-300 lg:scale-100 scale-75 sm:scale-90 hover:scale-90"
               >
                 <Image src={Instagram} alt="..." />
               </Link>
               <Link
                 href="https://x.com/ursnctuary"
                 target="_blank"
-                className="hover:scale-125 transition-all duration-300"
+                className="lg:hover:scale-125 transition-all duration-300 lg:scale-100 scale-75 sm:scale-90 hover:scale-90"
               >
                 <Image src={X} alt="..." />
               </Link>
               <Link
                 href="/"
                 target="_blank"
-                className="hover:scale-125 transition-all duration-300"
+                className="lg:hover:scale-125 transition-all duration-300 lg:scale-100 scale-75 sm:scale-90 hover:scale-90"
               >
                 <Image src={Linkedin} alt="..." />
               </Link>
-              <button className="border-2 w-max py-1 px-4 rounded-lg transition-all ease-in-out duration-500 hover:bg-white hover:text-black flex flex-row items-center gap-1 font-mono hover:rounded-none ml-auto ">
+              <button className="border-2 w-max py-1 px-4 rounded-lg transition-all ease-in-out duration-500 hover:bg-white hover:text-black flex flex-row items-center gap-1 font-mono hover:rounded-none ml-auto scale-75 sm:scale-90 lg:scale-100">
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

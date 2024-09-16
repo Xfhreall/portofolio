@@ -22,7 +22,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-black">
+      <body className="bg-black relative">
         <Navbar />
         {children}
       </body>

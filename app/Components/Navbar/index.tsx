@@ -1,7 +1,7 @@
 import Link from "next/link";
 const Navbar = () => {
   return (
-    <nav className="z-50 w-max h-max absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4">
+    <nav className="z-50 w-max h-max fixed bottom-0 left-1/2 transform -translate-x-1/2 mb-4 scale-75 sm:scale-100 lg:scale-100">
       <ul className="flex flex-row justify-center gap-6 text-white items-center px-8 py-3 border-white/20 border-2 rounded-full bg-white/5 backdrop-blur-sm shadow-lg">
         <li className="border-2 border-white/70 p-2 rounded-circle hover:bg-white hover:text-black transition-all ease-in-out duration-300">
           <Link href={"/"}>
